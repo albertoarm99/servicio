@@ -7,7 +7,274 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+/* -------------------- Navbar ------------------------ */
+
+.nav-toolbar{
+  min-height: 70px !important;
+  background-color: #f7a40c;
+}
+
+.nav-title{
+  flex-grow: 1;
+}
+
+.nav-item{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-button{
+  margin-right: 16px !important;
+  text-transform: capitalize !important;
+  font-size: 15px;
+}
+
+.nav-item-active{
+  color: black;
+}
+
+.nav-item-active .nav-button{
+  background-color: antiquewhite ;
+}
+
+.nav-movil{
+  display: none;
+}
+
+.nav-list-item{
+  width: 250px;
+}
+
+/* -------------------- Inicio ------------------------ */
+
+/* Presentacion Inicio */
+
+.ini-img{
+  width: 99%;
+  height: 700px;
+  background-image: url(./data/Fondo.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.7;
+  margin: auto;
+  border: 1px white solid
+}
+
+.ini-img-contenedor-text{
+  margin-top: 250px;
+}
+
+.ini-img-text{
+  text-transform: uppercase;
+  font-family: 'Montserrat','Helvetica Neue','Helvetica,Arial','sans-serif';
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.ini-cont{
+  margin-top: 50px;
+  width: 100%;
+}
+
+.ini-cont-card{
+  width: 100% !important;
+  margin-top: 30px;
+}
+
+/* card Inicio */
+
+.card-inicio-contenedor{
+  max-width: 300px;
+}
+
+.card-inicio-img{
+  width: 100%;
+  height: 168.75px;
+}
+
+/* -------------------- Menu ------------------------ */
+
+/* card Menu */
+.card-menu-contenedor{
+  display: flex;
+  width: 500px;
+  height: 300px;
+  margin: 7px;
+}
+
+.card-menu-img{
+  width: 250px;
+  height: 300px;
+  object-fit: scale-down;
+}
+
+.card-menu-contenedor-info{
+  width: 250px;
+  height: 300px;
+}
+.card-menu-contenedor-buttons{
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-menu-counter{
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+  align-items: center;
+}
+
+.card-menu-contenedor-buttons-agregar{
+  width: 100%;
+}
+
+.cont-info{
+  height: 180px;
+}
+
+.cont-menu-p{
+  flex-grow: 1;
+  width: 100%;
+}
+
+.cont-menu-p-fondo{
+  width: 100% !important;
+  align-items:center;
+  text-align: center;
+  margin: 0px !important;
+}
+
+/* menu del menu */
+
+.menu-platillos{
+
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+.menu-platillos-buttons{
+  white-space: nowrap;
+  overflow: auto;
+}
+
+
+/* -------------------- carrito ------------------------ */
+.card-carrito-contenedor{
+  display: flex;
+  width: 300px;
+  height: 150px;
+  margin: 7px;
+}
+
+.card-carrito-img{
+  width: 90px;
+  object-fit: scale-down;
+}
+
+.card-carrito-cont-img{
+  align-items: center;
+  margin: auto;
+}
+
+.card-carrito-title{
+  font-size: 1rem !important;
+}
+
+.card-carrito-delete{
+  display: flex;
+  flex-direction: row-reverse;
+}
+/* -------------------- fabCarrito ------------------------ */
+
+
+
+
+/* -------------------- extras ------------------------ */
+.border{
+  border: 1px black solid;
+}
+
+.cnt{
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  font-size: 15px !important;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 768px){
+  .nav-desktop{
+    display: none;
+  }
+  .nav-movil{
+    display: block;
+  }
+  .ini-img{
+    width: 100%;
+    height: 500px;
+  }
+  .ini-img-contenedor-text{
+    margin-top: 100px;
+  }
+
+  .ini-cont-text{
+    font-size: 1.5rem !important;
+  }
+
+  .nav-item{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-item-active{
+    background-color: antiquewhite;
+  }
+
+  .card-menu-contenedor{
+    width: 370px;
+    height: 210px;
+  }
+
+  .card-menu-img{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* margin: "auto" !important; */
+  }
+  .card-cont-img{
+    width: 150px;
+    height: 100%;
+  }
+  
+  .card-menu-title{
+    font-size: 18px !important;
+  }
+  .no-visible{
+    display: none;
+  }
+  .card-menu-contenido{
+    font-size: 12px !important;
+  }
+
+  .card-menu-contenedor-info{
+    width: 220px;
+    height: 200px;
+  }
+  .cont-info{
+    height: 90px;
+  }
 }
